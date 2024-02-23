@@ -272,8 +272,12 @@ body {
   flex-direction: column;
   z-index: 50;
   top: 300px;
-  left: 0px;
+  left: 2%;
   margin-top: -83px;
+}
+
+.block__bag {
+  cursor: pointer;
 }
 
 .blog__hr:not(:last-child) {
@@ -512,7 +516,7 @@ body {
   z-index: 49;
   bottom: -40px;
   height: 180px;
-  background: rgb(99, 158, 92, 0.8);
+  background: rgba(33, 97, 37, 0.8);
 }
 
 .item-liaison {
@@ -776,6 +780,10 @@ body {
   align-items: center;
 }
 
+.specilists__body .slider {
+  padding: 0 20px;
+}
+
 .specilists__bgr {
   background: #bcbbbc;
   min-width: 100%;
@@ -787,7 +795,7 @@ body {
 }
 
 .specilists__column {
-  flex: 0 1 16.666%;
+  margin-right: 95px;
 }
 
 .specilists__item {
@@ -796,7 +804,7 @@ body {
 }
 
 .item-specilists {
-  padding: 87px 0 20px 0;
+  padding: 47px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -836,6 +844,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 8px;
+  cursor: pointer;
 }
 
 .specilists__arrow svg {
@@ -845,6 +854,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.specilists__icon:hover {
+  background-color: #fff;
+}
+
+.specilists__icon:hover .specilists__arrow svg {
+  color: #000;
 }
 
 /* *********   БЛОК 8   ****************************** */
@@ -952,11 +969,12 @@ body {
   display: flex;
   align-items: center;
   margin: 0 -12px;
+  width: 100%;
+  position: relative;
 }
 
 .feedback__column {
-  flex: 0 1 25%;
-  padding: 0 12px;
+  margin-right: 23px;
 }
 
 .item-feedback {
@@ -1158,6 +1176,16 @@ body {
   align-items: center;
   justify-content: center;
   padding: 8px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.feedback__icon:first-child {
+  left: -5%;
+}
+
+.feedback__icon:last-child {
+  right: -5%;
 }
 
 .feedback__slider svg {
@@ -1166,4 +1194,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.feedback__icon:hover {
+  background-color: #329244;
+}
+
+.feedback__icon:hover .feedback__slider svg {
+  color: #fff;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  transition-duration: 500ms;
 }
